@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --header-heigh: 80px
+}
+html {
+    font-family: "Playwrite DE Grund", cursive;
+    font-size: 62.5%;
+}
+
+
+
+.header {
+    background-color: #999999;
+    height: var(--header-heigh);
+    width: 100%;
+    padding: 0 8px;
+}
+
+.header.active {
+    margin-bottom: 80px;
+}
+
+.header-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-heigh);
+    position: relative;
+}
+
+.header-company {
+    font-size: 2.6rem;
+    font-weight: 900;
+}
+
+.btn-menu {
+    font-size: 2.4rem;
+    padding: 4px;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+}
+
+.list-menu {
+    position: absolute;
+    top: var(--header-heigh);
+    left: 0;
+    right: 0;
+    border: 2px solid #000;
+    display: none;
+}
+
+.menu-item {
+    list-style: none;
+    text-align: center;
+    border-bottom: 2px solid #000 ;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.js-btn-menu.active i {
+    color: #fff;
+    border-color: #fff;
+}
+
+.js-btn-menu.active .list-menu {
+    display: block;
+}
+
+.menu-item:last-child {
+    border: 0;
+}
+
+.body {
+    margin: 0 8px;
+}
+
+
+.body-heading-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 16px 0;
+}
+
+.body-content {
+    background-color: #999999;
+    padding: 0 12px 8px;
+}
+
+.body-content-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+}
+
+.body-content-body {
+    font-size: 1.2rem;
+}
